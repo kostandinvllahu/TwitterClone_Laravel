@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Twitter</title>
+        <title>Twitter. It's what's happening / Twitter</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -95,7 +95,61 @@
 
                         </div>
                     </div>
-
+                    <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                About
+                </div>
+                <div class="col-sm">
+                Help Center
+                </div>
+                <div class="col-sm">
+                Term of Service
+                </div>
+                <div class="col-sm">
+                Privacy Police
+                </div>
+                <div class="col-sm">
+                Cookie Policy
+                </div>
+                <div class="col-sm">
+                Ads Info
+                </div>
+                <div class="col-sm">
+                Blog
+                </div>
+                <div class="col-sm">
+                Status
+                </div>
+                <div class="col-sm">
+                Careers
+                </div>
+                <div class="col-sm">
+                Brand Resources
+                </div>
+                <div class="col-sm">
+                Advertising
+                </div>
+                <div class="col-sm">
+                Marketing
+                </div>
+                <div class="col-sm">
+                Twitter for Business
+                </div>
+                <div class="col-sm">
+                Developers
+                </div>
+                <div class="col-sm">
+                Directory
+                </div>
+                <div class="col-sm">
+                Settings
+                </div>
+                <div class="col-sm">
+                One of three columns
+                </div>
+            </div>
+        </div>
 
 
 
