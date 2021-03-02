@@ -51,8 +51,26 @@
             color: blue;
             font-weight: bolder;
             }
-            
 
+            .footer {
+            color: #898f8e;
+            text-align: center;
+            font-size: 75%;
+
+        }
+
+        .footer a{ 
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .footer a:hover{
+            text-decoration: underline;
+        }
+
+        #loginBtn:hover{
+         background-color: rgba(15, 230, 244, 10);
+        }
         </style>
     </head>
     <body>
@@ -87,7 +105,7 @@
                                         @else
                                         <br></br>
                                         <div class="btn btn-primary" id="loginBtn">
-                                            <a href="{{ route('login') }}">Log in</a>
+                                            <a href="{{ route('login') }}" style="text-decoration: none;">Log in</a>
                                         </div>
                                         @endauth
                                 @endif
@@ -95,61 +113,34 @@
 
                         </div>
                     </div>
-                    <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                About
-                </div>
-                <div class="col-sm">
-                Help Center
-                </div>
-                <div class="col-sm">
-                Term of Service
-                </div>
-                <div class="col-sm">
-                Privacy Police
-                </div>
-                <div class="col-sm">
-                Cookie Policy
-                </div>
-                <div class="col-sm">
-                Ads Info
-                </div>
-                <div class="col-sm">
-                Blog
-                </div>
-                <div class="col-sm">
-                Status
-                </div>
-                <div class="col-sm">
-                Careers
-                </div>
-                <div class="col-sm">
-                Brand Resources
-                </div>
-                <div class="col-sm">
-                Advertising
-                </div>
-                <div class="col-sm">
-                Marketing
-                </div>
-                <div class="col-sm">
-                Twitter for Business
-                </div>
-                <div class="col-sm">
-                Developers
-                </div>
-                <div class="col-sm">
-                Directory
-                </div>
-                <div class="col-sm">
-                Settings
-                </div>
-                <div class="col-sm">
-                One of three columns
-                </div>
-            </div>
+                
+                    <div class="">
+        <div class="footer">
+            <thead>
+                <tr>
+                <th scope="col"><a href="{{ route('about') }}">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Help Center&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Terns of Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Cookie Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Ads info&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Blog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Careers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Brand Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Advertising&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Marketing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Twiiter for Business&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Developers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Directory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">Settings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th scope="col">&copy; 2021 Twitter, Inc,</th>
+                </tr>
+            </thead>
         </div>
+    </div>
+<br>
+
 
 
 
