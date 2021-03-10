@@ -48,7 +48,7 @@
             }
 
             #loginBtn{
-            background-color: white;
+            background-color: black;
             color: blue;
             font-weight: bolder;
             }
@@ -66,10 +66,12 @@
         }
 
         .footer a:hover{
+           
             text-decoration: underline;
         }
 
         #loginBtn:hover{
+         opacity: 0.6
          background-color: rgba(15, 230, 244, 10);
         }
         </style>
