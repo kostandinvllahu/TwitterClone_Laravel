@@ -4,116 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" type="image/png" href="images/foto.png" />
+    <title>Login on Twitter / Twitter</title>
+    <link rel="icon" type="image/png" href="images/foto.png"/>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
+
 <style>
-.body{
-    background-color: black;
-}
+    body {
+        background-color: black;
+        text-align: center;
+    }
 
-.card-header{
-    color: white;
-}
+    input {
+        background-color: black;
+        width: 350px;
+        height: 65px;
+        color: white;
+    }
 
-input{
-  background-color: black;
-  width: 300px;
- height: 60px;
-}
+    #loginBtn {
+        background-color: #26a3c9;
+    }
 
-.password{
-    margin: auto;
-  width: 50%;
-  padding: 10px;
-}
+    ::-webkit-input-placeholder {
+         color: #999; 
+    }
 
-.button{
-    margin: auto;
-  width: 50%;
-  padding: 10px;
-}
+    :-moz-placeholder { 
+        color: #999; 
+    }
 
-.card{
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
+    :focus::-webkit-input-placeholder { 
+        color: #26a3c9;
+
+    }
+
+    :focus:-moz-placeholder { 
+        color: #26a3c9;
+    }​
+
+    a:link {
+        color: #26a3c9;
+    }
+
+    a:visited, a:link, a:active
+    {
+        color: #26a3c9;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #26a3c9;
+        text-decoration: underline;
+    }
+
 </style>
+<body>
 
-<body class="body">
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card" style="text-align: center;">
-                <img src="images/logo.png" alt="logo" style="max-width: 3%;">
-                </div>
-                <div class="card-header" style="text-align: center;">{{ __('Log in to Twitter') }}</div>
-
-                    <div class="card-body">
+<div class="login">
+    <br>
+    <img src="images/logo.png" alt="logo" width="40px">
+    <br><br>
+                    <div style="color: white;"><h2>Log in to Twitter</h2></div>
+                    </div>
+                        <br>
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
-
-                            <div class="form-group row">
-                              
-                                <div class="username" style="text-align: center;">
-                <input id="login" type="text"
-                class="form-control{{ $errors->has('name') || $errors->has('email') ? ' is-invalid' : '' }}"
-                name="login" value="{{ old('name') ?: old('email') }}" required autofocus>
-                                <!-- @error('email')
+                                    <input id="email" type="email" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Phone, email, or username">
+                                    @error('email')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
-                                        
                                     @enderror
-                                    -->
-                                </div>
-                            </div>
+                                        <br><br>
 
-                            <div class="form-group row">
-                                
-                                <div class="password" style="text-align: center;">
-                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
+                                    <input id="password" type="password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password">
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
                                     @enderror
-                                </div>
-                            </div>
+                                        <br><br>
 
-                            <div class="form-group row">
-                                <div class="col-md-6 offset-md-4">
-                                    
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row mb-0">
-                                <div class="button" style="text-align: center;">
-                                    <button type="submit" class="btn btn-primary">
-                                        {{ __('Login') }}
+                                    <button id="loginBtn" type="submit" class="btn btn-primary" style="width: 350px; border-radius: 22px; height: 45px;">
+                                        {{ __('Log in') }}
                                     </button>
-
+                                        <br><br>
                                     @if (Route::has('password.request'))
-                                    <div class="reset" style="text-align: center;">
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
-                                            {{ __('Forgot Your Password?') }}
-                                        </a>
-                                        </div>
+                                        <a href="{{ route('password.request') }}">Forgot Password?</a>
+                                        •
+                                        <a href="{{ route('register') }}">Sign up for Twitter</a>
                                     @endif
-                                </div>
-                            </div>
                         </form>
                     </div>
                 </div>
-            </div>
-        </div>
-
+            
+                    
 </body>
+
 </html>
-
-
