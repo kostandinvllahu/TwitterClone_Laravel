@@ -47,12 +47,6 @@
                 color: white; 
             }
 
-            #loginBtn{
-            background-color: black;
-            color: blue;
-            font-weight: bolder;
-            }
-
             .footer {
             color: #898f8e;
             text-align: center;
@@ -70,10 +64,17 @@
             text-decoration: underline;
         }
 
-        #loginBtn:hover{
-         opacity: 0.6
-         background-color: rgba(15, 230, 244, 10);
+        #loginBtn {
+            background-color: black;
+            color: #0ec6f0;
+            font-weight: bolder;
         }
+
+        #loginBtn:hover {
+            background-color: rgba(35, 230, 244, 0.10);
+
+        }
+
         </style>
     </head>
     <body>
@@ -137,6 +138,7 @@
                     <th scope="col">Developers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                     <th scope="col">Directory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                     <th scope="col">Settings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <br></br>
                     <th scope="col">&copy; 2021 Twitter, Inc,</th>
                 </tr>
             </thead>
