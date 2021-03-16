@@ -59,6 +59,15 @@
         text-decoration: underline;
     }
 
+    img{
+        margin-right: 320px;
+    }
+
+    .title{
+        margin-right: 120px;
+        color: white;
+    }
+
 </style>
 <body>
 
@@ -66,7 +75,7 @@
     <br>
     <img src="images/logo.png" alt="logo" width="40px">
     <br><br>
-                    <div style="color: white;"><h2>Log in to Twitter</h2></div>
+                    <div class="title"><h2>Log in to Twitter</h2></div>
                     </div>
                         <br>
                         <form method="POST" action="{{ route('login') }}">
